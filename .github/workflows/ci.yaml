@@ -23,6 +23,8 @@ jobs:
               with:
                   name: node_modules
                   path: node_modules
+            - name: List files
+              run: ls -R
 
 
     tests:
