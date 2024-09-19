@@ -30,5 +30,7 @@ jobs:
             - uses: actions/download-artifact@v4
               with:
                   name: node_modules
+            - name: List files
+              run: ls -R
             - name: Npm runs the test
               run: npm test
